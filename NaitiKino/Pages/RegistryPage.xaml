@@ -12,9 +12,6 @@
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" >
             <TextBlock>Логин:</TextBlock>
             <TextBox Name="Login" Width="200"></TextBox>
-            <TextBlock Text="Изображение:" Margin="5"/>
-            <TextBox Name="ImagePathTextBox" Margin="5" IsReadOnly="True"/>
-            <Button Content="Обзор" Click="BrowseButton_Click" Margin="5"/>
             <TextBlock>Пароль:</TextBlock>
             <PasswordBox Name="Password" Width="200"></PasswordBox>
             <TextBlock>Имя:</TextBlock>
@@ -25,8 +22,11 @@
             <TextBox Name="Patronymic" Width="200"/>
             <TextBlock>Псевдоним:</TextBlock>
             <TextBox Name="Nickname" Width="200"/>
+            <TextBlock Text="Изображение:" Margin="5"/>
+            <TextBox Name="ImagePathTextBox" Margin="5" IsReadOnly="True"/>
+            <Button Content="Обзор" Click="BrowseButton_Click" Margin="5"/>
             <Button Content="Регистрация" Margin="0 10" Click="RegistryButton_Click"></Button>
             <Button Margin="50 10 0 0" Content="Если у вас уже есть аккаунт" Click="LoginButton_Click"></Button>
-        </StackPanel>
+            </StackPanel>
     </Grid>
 </Page>
