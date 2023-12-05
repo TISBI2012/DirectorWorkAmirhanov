@@ -1,0 +1,34 @@
+﻿<Page x:Class="NaitiKino.Pages.AddFilmPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NaitiKino.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddFilmPage">
+
+    <Grid>
+        <StackPanel Margin="20" Width="200">
+        <TextBlock Text="Название:" Margin="5"/>
+        <TextBox Name="NameTextBox" Margin="5"/>
+
+        <TextBlock Text="Описание:" Margin="5"/>
+        <TextBox Name="DescriptionTextBox" Margin="5"/>
+
+        <TextBlock Text="Продолжительность (часы):" Margin="5"/>
+        <TextBox Name="DurationTextBox" Margin="5"/>
+
+        <TextBlock Text="Изображение:" Margin="5"/>
+        <TextBox Name="ImagePathTextBox" Margin="5" IsReadOnly="True"/>
+        <Button Content="Обзор" Click="BrowseButton_Click" Margin="5"/>
+            
+        <Image Name="SelectedImage" Width="200"  Margin="5" />
+
+        <TextBlock Text="Жанр:" Margin="5"/>
+        <ComboBox Name="GenreComboBox" Margin="5"/>
+
+        <Button Content="Сохранить" Click="SaveButton_Click" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Page>
